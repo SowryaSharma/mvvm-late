@@ -18,9 +18,12 @@
 		69CF0E692887E7C2001B1D7A /* bbqq.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69CF0E672887E7C2001B1D7A /* bbqq.xcdatamodeld */; };
 		69CF0E6B2887E7C7001B1D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CF0E6A2887E7C7001B1D7A /* Assets.xcassets */; };
 		69CF0E6E2887E7C7001B1D7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69CF0E6C2887E7C7001B1D7A /* LaunchScreen.storyboard */; };
+		7D9DFE5623F93CCFD345924E /* Pods_bbqq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FADCB11BA730D726E393498 /* Pods_bbqq.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FADCB11BA730D726E393498 /* Pods_bbqq.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bbqq.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53CEEE5F854390EA18781EB0 /* Pods-bbqq.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbqq.release.xcconfig"; path = "Target Support Files/Pods-bbqq/Pods-bbqq.release.xcconfig"; sourceTree = "<group>"; };
 		6916FBAF28AD025300FF854F /* viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewmodel.swift; sourceTree = "<group>"; };
 		6916FBB128AD08B100FF854F /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		692F7D8C28A3E12500E542C4 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		69CF0E6A2887E7C7001B1D7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69CF0E6D2887E7C7001B1D7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69CF0E6F2887E7C7001B1D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CCC1BC26D53A352E22DB45E /* Pods-bbqq.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbqq.debug.xcconfig"; path = "Target Support Files/Pods-bbqq/Pods-bbqq.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9DFE5623F93CCFD345924E /* Pods_bbqq.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006F7BF6A3B310E2AB25A4C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CCC1BC26D53A352E22DB45E /* Pods-bbqq.debug.xcconfig */,
+				53CEEE5F854390EA18781EB0 /* Pods-bbqq.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		09CA4E2A71A068DD34844A0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FADCB11BA730D726E393498 /* Pods_bbqq.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		69CF0E522887E7C2001B1D7A = {
 			isa = PBXGroup;
 			children = (
 				69CF0E5D2887E7C2001B1D7A /* bbqq */,
 				69CF0E5C2887E7C2001B1D7A /* Products */,
+				006F7BF6A3B310E2AB25A4C6 /* Pods */,
+				09CA4E2A71A068DD34844A0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69CF0E722887E7C7001B1D7A /* Build configuration list for PBXNativeTarget "bbqq" */;
 			buildPhases = (
+				E66F6CBB8426A6BE52F57071 /* [CP] Check Pods Manifest.lock */,
 				69CF0E572887E7C2001B1D7A /* Sources */,
 				69CF0E582887E7C2001B1D7A /* Frameworks */,
 				69CF0E592887E7C2001B1D7A /* Resources */,
+				1388AEF74EDE089AD6447E47 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,6 +174,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1388AEF74EDE089AD6447E47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bbqq/Pods-bbqq-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bbqq/Pods-bbqq-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bbqq/Pods-bbqq-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E66F6CBB8426A6BE52F57071 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bbqq-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		69CF0E572887E7C2001B1D7A /* Sources */ = {
@@ -304,6 +373,7 @@
 		};
 		69CF0E732887E7C7001B1D7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CCC1BC26D53A352E22DB45E /* Pods-bbqq.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -332,6 +402,7 @@
 		};
 		69CF0E742887E7C7001B1D7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53CEEE5F854390EA18781EB0 /* Pods-bbqq.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

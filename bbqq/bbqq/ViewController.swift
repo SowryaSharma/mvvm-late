@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         print("fetched data")
         returnData.shared.fetchdata(parse: { d in
             self.i = d
-            print(self.i?.author)
+            print(self.i)
         })
     }
     @IBAction func buttonPressed(_ sender: Any) {
